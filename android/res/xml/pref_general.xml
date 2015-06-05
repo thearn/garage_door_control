@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="homeonly_checkbox"
+        android:title="Home WIFI only"
+        android:summary="Only connects to core if connected to home WIFI network"
+        android:defaultValue="true" />
+    <EditTextPreference
+        android:key="ssid_text"
+        android:title="Home WIFI SSID"
+        android:defaultValue="01234homewifinamegoeshere56789"
+        android:selectAllOnFocus="true" />
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:key="deviceid_text"
+        android:title="Edit core device ID"
+        android:defaultValue="01234spark-core-id-goes-here56789"
+        android:selectAllOnFocus="true" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+</PreferenceScreen>
